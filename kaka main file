@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaka General Store — Groceries, Jewelry, Makeup & Clothing</title>
+<meta name="description" content="Kaka General Store — fresh groceries, fine jewelry, premium makeup and stylish clothing, all under one roof. Madni Market, Village Mancharia.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body{font-family:'Poppins',sans-serif;background:#fffaf6;color:#2b2320;}
+  .brand-font{font-family:'Playfair Display',serif;}
+  .gradient-hero{background:linear-gradient(135deg,#1a1512 0%,#3a2a20 55%,#7a5230 100%);}
+  .gold-text{color:#e8c27a;}
+  .price-tag{background:#1a1512;color:#e8c27a;}
+  .card-hover{transition:transform .35s ease, box-shadow .35s ease;}
+  .card-hover:hover{transform:translateY(-10px) scale(1.02);box-shadow:0 25px 40px -10px rgba(0,0,0,.25);}
+  .float{animation:floaty 4s ease-in-out infinite;}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+  .marquee-track{display:flex;width:max-content;animation:scroll 26s linear infinite;}
+  @keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+  .blob{border-radius:60% 40% 55% 45% / 45% 55% 45% 55%;}
+  .gold-border{border:1px solid #e8c27a;}
+  ::-webkit-scrollbar{width:10px;} ::-webkit-scrollbar-thumb{background:#7a5230;border-radius:10px;}
+  .tab-btn.active{background:#1a1512;color:#e8c27a;}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <div class="flex items-center gap-2">
+      <div class="w-11 h-11 rounded-full bg-[#e8c27a] flex items-center justify-center text-2xl shadow-md">🛍️</div>
+      <span class="brand-font text-2xl font-bold text-white drop-shadow">Kaka <span class="gold-text">General Store</span></span>
+    </div>
+    <nav class="hidden md:flex gap-8 text-white font-medium">
+      <a href="#home" class="hover:text-[#e8c27a] transition">Home</a>
+      <a href="#products" class="hover:text-[#e8c27a] transition">Shop</a>
+      <a href="#why" class="hover:text-[#e8c27a] transition">Why Us</a>
+      <a href="#testimonials" class="hover:text-[#e8c27a] transition">Reviews</a>
+      <a href="#contact" class="hover:text-[#e8c27a] transition">Contact</a>
+    </nav>
+    <a href="https://wa.me/923036315512" target="_blank" class="bg-[#e8c27a] hover:bg-[#f0d29a] text-[#1a1512] font-bold px-5 py-2.5 rounded-full shadow-lg transition">Order Now</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="gradient-hero relative min-h-screen flex items-center overflow-hidden pt-24">
+  <div class="absolute -top-10 -left-10 w-72 h-72 bg-[#e8c27a]/10 blob"></div>
+  <div class="absolute bottom-0 right-0 w-96 h-96 bg-[#e8c27a]/10 blob"></div>
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center relative z-10">
+    <div data-aos="fade-right" data-aos-duration="900">
+      <span class="inline-block bg-white/10 text-[#e8c27a] px-4 py-1.5 rounded-full text-sm font-semibold mb-5 backdrop-blur border border-[#e8c27a]/40">🛒 Groceries · Jewelry · Makeup · Clothing</span>
+      <h1 class="brand-font text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
+        Everything You Need at <span class="gold-text">Kaka</span> General Store
+      </h1>
+      <p class="text-white/80 text-lg mb-8 max-w-md">Fresh groceries, fine jewelry, premium makeup, and stylish clothing — all under one roof, all at honest prices.</p>
+      <div class="flex gap-4">
+        <a href="#products" class="bg-[#e8c27a] hover:bg-[#f0d29a] text-[#1a1512] font-bold px-7 py-3.5 rounded-full shadow-xl transition">Shop Now</a>
+        <a href="https://wa.me/923036315512" target="_blank" class="border-2 border-white text-white font-semibold px-7 py-3.5 rounded-full hover:bg-white hover:text-[#1a1512] transition">Contact Us</a>
+      </div>
+      <div class="flex gap-8 mt-10 text-white">
+        <div><p class="text-3xl font-bold gold-text">1000+</p><p class="text-sm text-white/70">Happy Customers</p></div>
+        <div><p class="text-3xl font-bold gold-text">300+</p><p class="text-sm text-white/70">Products</p></div>
+        <div><p class="text-3xl font-bold gold-text">4</p><p class="text-sm text-white/70">Categories</p></div>
+      </div>
+    </div>
+    <div data-aos="fade-left" data-aos-duration="900" class="relative flex justify-center">
+      <div class="w-80 h-80 md:w-[26rem] md:h-[26rem] bg-[#e8c27a]/20 rounded-full absolute blur-2xl"></div>
+      <img class="float relative rounded-3xl shadow-2xl w-80 md:w-[26rem] object-cover" src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop" alt="Kaka General Store products">
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE STRIP -->
+<div class="bg-[#1a1512] py-3 overflow-hidden">
+  <div class="marquee-track gold-text font-semibold text-lg gap-16 whitespace-nowrap">
+    <span class="px-8">🥕 Fresh Groceries</span><span class="px-8">💍 Fine Jewelry</span><span class="px-8">💄 Premium Makeup</span><span class="px-8">👗 Trendy Clothing</span><span class="px-8">🚚 Fast Delivery</span>
+    <span class="px-8">🥕 Fresh Groceries</span><span class="px-8">💍 Fine Jewelry</span><span class="px-8">💄 Premium Makeup</span><span class="px-8">👗 Trendy Clothing</span><span class="px-8">🚚 Fast Delivery</span>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section id="products" class="max-w-7xl mx-auto px-6 py-24">
+  <div class="text-center mb-12" data-aos="fade-up">
+    <span class="text-[#7a5230] font-semibold uppercase tracking-widest text-sm">Our Collection</span>
+    <h2 class="brand-font text-4xl md:text-5xl font-bold mt-2">Best Sellers at Kaka General Store</h2>
+    <p class="text-gray-500 mt-3 max-w-xl mx-auto">Sample products shown below — send your real products, prices, and photos and I'll replace these instantly.</p>
+  </div>
+
+  <div class="flex justify-center gap-3 mb-12 flex-wrap">
+    <button class="tab-btn active px-5 py-2 rounded-full font-semibold border gold-border transition" data-filter="all">All</button>
+    <button class="tab-btn px-5 py-2 rounded-full font-semibold border gold-border transition" data-filter="grocery">Groceries</button>
+    <button class="tab-btn px-5 py-2 rounded-full font-semibold border gold-border transition" data-filter="jewelry">Jewelry</button>
+    <button class="tab-btn px-5 py-2 rounded-full font-semibold border gold-border transition" data-filter="makeup">Makeup</button>
+    <button class="tab-btn px-5 py-2 rounded-full font-semibold border gold-border transition" data-filter="clothing">Clothing</button>
+  </div>
+
+  <div id="product-grid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
+    <!-- Product cards injected by JS -->
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why" class="bg-[#fbeedd] py-24">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
+    <div class="bg-white rounded-2xl p-8 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="0">
+      <div class="text-5xl mb-4">🛍️</div>
+      <h3 class="font-bold text-xl mb-2">All Under One Roof</h3>
+      <p class="text-gray-500">From daily groceries to jewelry and fashion — one trusted store for everything.</p>
+    </div>
+    <div class="bg-white rounded-2xl p-8 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="150">
+      <div class="text-5xl mb-4">🚚</div>
+      <h3 class="font-bold text-xl mb-2">Fast Delivery</h3>
+      <p class="text-gray-500">Quick, careful delivery so your order arrives fresh and in perfect condition.</p>
+    </div>
+    <div class="bg-white rounded-2xl p-8 shadow-md card-hover" data-aos="zoom-in" data-aos-delay="300">
+      <div class="text-5xl mb-4">💰</div>
+      <h3 class="font-bold text-xl mb-2">Honest Prices</h3>
+      <p class="text-gray-500">Fair, wholesale-friendly pricing across every category we sell.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="max-w-5xl mx-auto px-6 py-24 text-center">
+  <span class="text-[#7a5230] font-semibold uppercase tracking-widest text-sm" data-aos="fade-up">Testimonials</span>
+  <h2 class="brand-font text-4xl font-bold mt-2 mb-14" data-aos="fade-up">What Customers Say</h2>
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="bg-white rounded-2xl p-8 shadow-md text-left card-hover" data-aos="fade-right">
+      <p class="text-gray-600 mb-4">"Kaka General Store has everything — I get my groceries and gifts from the same place now!"</p>
+      <p class="font-bold">— Amina R.</p>
+    </div>
+    <div class="bg-white rounded-2xl p-8 shadow-md text-left card-hover" data-aos="fade-left">
+      <p class="text-gray-600 mb-4">"Great prices and quality across the board. My go-to store for everything."</p>
+      <p class="font-bold">— Bilal S.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / CTA -->
+<section id="contact" class="gradient-hero py-24 relative overflow-hidden">
+  <div class="absolute -bottom-16 -right-10 w-72 h-72 bg-[#e8c27a]/10 blob"></div>
+  <div class="max-w-4xl mx-auto px-6 text-center relative z-10" data-aos="zoom-in">
+    <h2 class="brand-font text-4xl md:text-5xl font-bold text-white mb-5">Ready to Shop with Kaka?</h2>
+    <p class="text-white/80 mb-8 max-w-lg mx-auto">Message us to place your order or ask about new arrivals in groceries, jewelry, makeup, and clothing.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-14">
+      <a href="tel:+923036315512" class="bg-[#e8c27a] hover:bg-[#f0d29a] text-[#1a1512] font-bold px-8 py-3.5 rounded-full shadow-xl transition">📞 Call Us</a>
+      <a href="https://wa.me/923036315512" target="_blank" class="bg-white hover:bg-gray-100 text-[#1a1512] font-bold px-8 py-3.5 rounded-full shadow-xl transition">💬 WhatsApp Us</a>
+    </div>
+
+    <div class="bg-white/10 border border-[#e8c27a]/30 backdrop-blur rounded-2xl p-8 max-w-xl mx-auto text-left">
+      <h3 class="brand-font text-2xl font-bold text-white mb-4 text-center">📍 Visit Our Shop</h3>
+      <div class="space-y-3 text-white/90">
+        <p class="flex items-start gap-3"><span class="text-xl">🏪</span><span><strong class="text-[#e8c27a]">Market:</strong> Madni Market</span></p>
+        <p class="flex items-start gap-3"><span class="text-xl">📌</span><span><strong class="text-[#e8c27a]">Location:</strong> Village Mancharia, near Baba Qasim Shop</span></p>
+        <p class="flex items-start gap-3"><span class="text-xl">💬</span><span><strong class="text-[#e8c27a]">WhatsApp:</strong> <a href="https://wa.me/923036315512" target="_blank" class="underline hover:text-[#e8c27a]">+92 303 6315512</a></span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#1a1512] text-white/70 py-10">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="flex items-center gap-2">
+      <div class="w-9 h-9 rounded-full bg-[#e8c27a] flex items-center justify-center text-lg">🛍️</div>
+      <span class="brand-font font-bold text-white text-lg">Kaka General Store</span>
+    </div>
+    <p class="text-sm text-center">Madni Market, Village Mancharia (near Baba Qasim Shop) · <a href="https://wa.me/923036315512" target="_blank" class="hover:text-[#e8c27a] underline">+92 303 6315512</a></p>
+    <p class="text-sm">© 2026 Kaka General Store. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+AOS.init();
+
+// Placeholder product data — replace with real products, prices & photos
+const products = [
+  { name: "Fresh Tomatoes", price: "PKR 120/kg", cat: "grocery", img: "https://images.unsplash.com/photo-1546470427-e26264be0b0d?q=80&w=600&auto=format&fit=crop" },
+  { name: "Red Apples", price: "PKR 280/kg", cat: "grocery", img: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?q=80&w=600&auto=format&fit=crop" },
+  { name: "Fresh Milk (1L)", price: "PKR 220", cat: "grocery", img: "https://images.unsplash.com/photo-1550583724-b2692b85b150?q=80&w=600&auto=format&fit=crop" },
+  { name: "Basmati Rice (5kg)", price: "PKR 1,450", cat: "grocery", img: "https://images.unsplash.com/photo-1586201375761-83865001e31c?q=80&w=600&auto=format&fit=crop" },
+  { name: "Gold Plated Necklace", price: "PKR 2,500", cat: "jewelry", img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=600&auto=format&fit=crop" },
+  { name: "Pearl Earrings", price: "PKR 1,200", cat: "jewelry", img: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=600&auto=format&fit=crop" },
+  { name: "Designer Bangles Set", price: "PKR 900", cat: "jewelry", img: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=600&auto=format&fit=crop" },
+  { name: "Matte Lipstick Set", price: "PKR 1,500", cat: "makeup", img: "https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=600&auto=format&fit=crop" },
+  { name: "Foundation & Concealer Kit", price: "PKR 2,200", cat: "makeup", img: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=600&auto=format&fit=crop" },
+  { name: "Eyeshadow Palette", price: "PKR 1,800", cat: "makeup", img: "https://images.unsplash.com/photo-1583241800698-e8ab01c85b31?q=80&w=600&auto=format&fit=crop" },
+  { name: "Embroidered Kurti", price: "PKR 3,200", cat: "clothing", img: "https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?q=80&w=600&auto=format&fit=crop" },
+  { name: "Casual Summer Dress", price: "PKR 2,800", cat: "clothing", img: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop" }
+];
+
+const grid = document.getElementById('product-grid');
+function renderProducts(filter) {
+  grid.innerHTML = '';
+  products.filter(p => filter === 'all' || p.cat === filter).forEach((p, i) => {
+    const card = document.createElement('div');
+    card.className = "bg-white rounded-2xl overflow-hidden shadow-md card-hover";
+    card.setAttribute('data-aos', 'fade-up');
+    card.setAttribute('data-aos-delay', (i % 4) * 100);
+    card.innerHTML = `
+      <div class="h-48 overflow-hidden"><img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover hover:scale-110 transition duration-500"></div>
+      <div class="p-5">
+        <h3 class="font-bold text-lg mb-2">${p.name}</h3>
+        <div class="flex items-center justify-between">
+          <span class="price-tag font-bold px-3 py-1 rounded-full text-sm">${p.price}</span>
+          <button class="bg-[#1a1512] hover:bg-[#3a2a20] text-[#e8c27a] w-9 h-9 rounded-full text-lg transition">+</button>
+        </div>
+      </div>`;
+    grid.appendChild(card);
+  });
+  AOS.refresh();
+}
+renderProducts('all');
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderProducts(btn.dataset.filter);
+  });
+});
+
+// Navbar background on scroll
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) {
+    navbar.classList.add('bg-[#1a1512]/90', 'backdrop-blur', 'shadow-lg');
+  } else {
+    navbar.classList.remove('bg-[#1a1512]/90', 'backdrop-blur', 'shadow-lg');
+  }
+});
+
+// GSAP hero entrance
+gsap.from("#home h1", { opacity: 0, y: 40, duration: 1, ease: "power3.out" });
+gsap.from("#home p", { opacity: 0, y: 30, duration: 1, delay: 0.2, ease: "power3.out" });
+</script>
+</body>
+</html>
