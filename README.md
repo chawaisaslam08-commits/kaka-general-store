@@ -80,3 +80,54 @@ We proudly offer a wide range of products for the whole family, including fashio
 Serving customers with honesty, quality, and affordable prices.
 
 Thank you for choosing **Kaka General Store! ❤️**
+# 🛍️ Kaka General Store
+
+## 📍 Our Location
+
+**Madni Market**  
+Near Baba Qasim Shop  
+Village Mancharian  
+Tehsil Depalpur, Pakistan
+
+---
+
+## 💎 Jewelry
+
+![Jewelry](images/jewelry.jpg)
+
+Beautiful rings, necklaces, bangles, earrings, bracelets and more.
+
+---
+
+## 👗 Clothing
+
+![Clothing](images/clothing.jpg)
+
+Fashionable clothing for men, women and children.
+
+---
+
+## 💄 Face Wash & Makeup
+
+![Face Wash](images/facewash.jpg)
+
+Face wash, creams, perfumes, lipsticks and beauty products.
+
+---
+
+## 🧺 Plastic Household Items
+
+![Plastic Basket](images/basket.jpg)
+
+Plastic baskets, buckets, containers and household items.
+
+---
+
+## ❤️ Why Choose Us?
+
+- ✅ High Quality Products
+- ✅ Affordable Prices
+- ✅ Friendly Service
+- ✅ Trusted Local Store
+
+Thank you for visiting **Kaka General Store**.
